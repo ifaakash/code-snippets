@@ -51,6 +51,11 @@ int main()
   return 0;
 }
 
+*/
+
+
+/*
+
 // ---------------- PG2 -----------------
 
 ******
@@ -59,8 +64,6 @@ int main()
 ***
 **
 *
-
-*/
 
 #include <stdio.h>
 
@@ -76,3 +79,81 @@ int main()
   }
   return 0;
 }
+
+*/
+
+// ---------------- PG3 -----------------
+
+/*
+
+*     
+**    
+***   
+****  
+***** 
+******
+
+#include <stdio.h>
+
+int main()
+{
+  for(int i=0;i<=5;i++){
+  	for(int j=0;j<=5;j++){
+  		if(j<=i){
+  			printf("*");
+  		}
+  		else{
+  			printf(" ");
+  		}
+  	}
+  	printf("\n");
+  }
+  return 0;
+}
+
+*/
+
+
+// ----------------- PG4 ----------------
+
+/*
+
+   *
+  ***
+ *****
+*******
+
+
+*/
+
+
+#include <stdio.h>
+
+int main(){
+    for(int i=0;i<=2;i++){
+    	for(int j=0;j<=5;j++){
+    	  if(j>=3-i && j<=3+i)
+    	     printf("*");
+    	  else
+    	     printf(" ");
+    	}
+    	printf("\n");
+    }
+    printf("-------- LOWER HALF ----------\n");
+    for(int i=4;i<=6;i++){
+    	for(int j=0;j<=5;j++){
+    		if(j>=i-3 && j<=9-i){
+    			printf("*");
+    		}
+    		else
+    		  printf(" ");
+    	}
+    	printf("\n");
+    }
+	return 0;
+}
+
+
+
+
+
