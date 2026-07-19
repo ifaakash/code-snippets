@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 int main(){
-    int height;
+    int iheight;
     printf("Enter height\n");
-    scanf("%d", &height);
-    if(height%2==0){
-    	height++;
+    scanf("%d", &iheight);
+    if(iheight%2==0){
+    	iheight++;
     }
-    int mid = height/2;
+    int mid = iheight/2;
     for(int i=0;i<=mid;i++){
-    	for(int j=0;j<=height;j++){
+    	for(int j=0;j<=iheight;j++){
     	  if(j>=mid-i && j<=mid+i)
     	     printf("*");
     	  else
@@ -17,9 +17,9 @@ int main(){
     	}
     	printf("\n");
     }
-    for(int i=mid+1;i<height;i++){
-    	for(int j=0;j<height;j++){
-    		if(j>=(i-mid) && j<=((height-1+mid)-i))
+    for(int i=mid+1;i<iheight;i++){
+    	for(int j=0;j<iheight;j++){
+    		if(j>=(i-mid) && j<=((iheight-1+mid)-i))
     	      printf("*");
     	    else
     	      printf(" ");
